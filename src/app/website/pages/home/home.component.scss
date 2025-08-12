@@ -1,0 +1,31 @@
+// Variables
+$primary-color: #3498db;
+$text-color: #333;
+$padding: 1rem;
+
+// Mixin
+@mixin card($bg-color) {
+  background-color: $bg-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: $padding;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+// Uso
+.card {
+  @include card(#ffffff);
+  color: $text-color;
+  font-family: sans-serif;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
