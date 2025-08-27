@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { WebsiteRoutingModule } from './website-routing.module';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CategoryComponent } from './pages/category/category.component';
+// import { CategoryComponent } from './pages/category/category.component';
 import { MyCartComponent } from './pages/my-cart/my-cart.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -13,12 +13,13 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { SwiperModule } from 'swiper/angular';
 import { LayoutComponent } from './components/layout/layout.component';
 import { SharedModule } from '../shared/shared.module';
+// import { QuicklinkModule } from 'ngx-quicklink';
 
 @NgModule({
   declarations: [
     NavComponent,
     HomeComponent,
-    CategoryComponent,
+    // CategoryComponent,
     MyCartComponent,
     LoginComponent,
     RegisterComponent,
@@ -26,6 +27,7 @@ import { SharedModule } from '../shared/shared.module';
     ProfileComponent,
     ProductDetailComponent,
     LayoutComponent,
+    // QuicklinkModule,
   ],
   imports: [CommonModule, WebsiteRoutingModule, SwiperModule, SharedModule],
 })
